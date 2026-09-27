@@ -1112,7 +1112,7 @@ function App() {
   return (
     <div className="min-h-screen px-4 py-8 max-w-[1200px] mx-auto space-y-6">
       {toast && <Toast msg={toast.msg} color={toast.color}/>}
-      <input ref={fileRef} type="file" accept=".csv" className="hidden" onChange={doImport}/>
+      <input ref={fileRef} type="file" accept=".csv, text/csv, application/vnd.ms-excel, application/csv, text/x-csv, application/x-csv, text/comma-separated-values, text/x-comma-separated-values" className="hidden" onChange={doImport}/>
 
       {/* ── HEADER ── */}
       <header className="flex items-center justify-between gap-6 flex-wrap pb-2">
